@@ -1,0 +1,137 @@
+[31-Mar-2022 19:54:53 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/add-api.php on line 38
+[31-Mar-2022 19:54:53 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/add-api.php on line 40
+[31-Mar-2022 19:59:34 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/edit-api.php on line 58
+[31-Mar-2022 20:00:00 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/edit-api.php on line 58
+[11-Jun-2022 13:00:59 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/edit-api.php on line 36
+[11-Jun-2022 13:11:28 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/edit-api.php on line 58
+[16-Jun-2022 07:26:47 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/add-api.php on line 38
+[16-Jun-2022 07:26:47 UTC] PHP Warning:  Creating default object from empty value in /home/stc6bm5tpwuq/public_html/app/somo/about/api/add-api.php on line 40
+[10-Dec-2022 18:57:59 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "success" on null in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/add-api.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/add-api.php on line 37
+[10-Dec-2022 19:04:12 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "success" on null in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/add-api.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/add-api.php on line 37
+[10-Dec-2022 19:04:32 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "success" on null in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/add-api.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/add-api.php on line 37
+[10-Dec-2022 19:11:54 UTC] PHP Warning:  Undefined array key "eventId" in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 5
+[10-Dec-2022 19:11:54 UTC] PHP Warning:  Undefined array key "eventName" in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 6
+[10-Dec-2022 19:11:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:33
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(33): mysqli->query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 33
+[10-Dec-2022 19:12:37 UTC] PHP Warning:  Undefined array key "eventName" in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 6
+[10-Dec-2022 19:12:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:12:55 UTC] PHP Warning:  Undefined array key "eventName" in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 6
+[10-Dec-2022 19:12:55 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:13:39 UTC] PHP Warning:  Undefined array key "eventName" in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 6
+[10-Dec-2022 19:13:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:13:53 UTC] PHP Warning:  Undefined array key "eventName" in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 6
+[10-Dec-2022 19:13:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:14:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:19:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:21:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:22:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'where clause' in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php:48
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php(48): mysqli_query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/edit-api.php on line 48
+[10-Dec-2022 19:24:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'hplus1.tbl_about' doesn't exist in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php:6
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php(6): mysqli->query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php on line 6
+[10-Dec-2022 19:24:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'hplus1.tbl_about' doesn't exist in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php:6
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php(6): mysqli->query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php on line 6
+[10-Dec-2022 19:24:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'hplus1.tbl_about' doesn't exist in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php:6
+Stack trace:
+#0 /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php(6): mysqli->query()
+#1 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php on line 6
+[10-Dec-2022 19:25:29 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "status" on null in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php on line 11
+[10-Dec-2022 19:25:43 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "status" on null in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php on line 11
+[10-Dec-2022 19:26:02 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "status" on null in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/d3ja6bfgrch2/public_html/bannerApp/admin/event/api/delete-api.php on line 11
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined index: planId in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 5
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined index: type in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 6
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined index: title in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 7
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 8
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined index: price in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 9
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined index: sellingprice in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 10
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined index: count in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 11
+[10-Apr-2023 01:29:11 UTC] PHP Notice:  Undefined variable: rsp in /home/eqe67rthxkhc/public_html/admin/page_setting/api/edit-api.php on line 39
+[10-Apr-2023 01:34:22 UTC] PHP Notice:  Undefined variable: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:35:06 UTC] PHP Notice:  Undefined variable: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:35:10 UTC] PHP Notice:  Undefined variable: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:36:22 UTC] PHP Warning:  include(./../config.php): failed to open stream: No such file or directory in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 3
+[10-Apr-2023 01:36:22 UTC] PHP Warning:  include(): Failed opening './../config.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 3
+[10-Apr-2023 01:36:22 UTC] PHP Notice:  Undefined variable: con in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:36:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:37:10 UTC] PHP Warning:  include(./../config.php): failed to open stream: No such file or directory in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 3
+[10-Apr-2023 01:37:10 UTC] PHP Warning:  include(): Failed opening './../config.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 3
+[10-Apr-2023 01:37:10 UTC] PHP Notice:  Undefined variable: con in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:37:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:37:52 UTC] PHP Warning:  include(./../config.php): failed to open stream: No such file or directory in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 3
+[10-Apr-2023 01:37:52 UTC] PHP Warning:  include(): Failed opening './../config.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 3
+[10-Apr-2023 01:37:52 UTC] PHP Notice:  Undefined variable: con in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[10-Apr-2023 01:37:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updateprivacypolicy.php on line 15
+[20-Apr-2023 00:50:42 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updatepage.php on line 7
+[20-Apr-2023 00:51:37 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updatepage.php on line 7
+[20-Apr-2023 12:02:50 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updatepage.php on line 7
+[20-Apr-2023 12:06:50 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updatepage.php on line 7
+[20-Apr-2023 12:14:57 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updatepage.php on line 7
+[20-Apr-2023 12:15:05 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updatepage.php on line 7
+[20-Apr-2023 12:16:05 UTC] PHP Notice:  Undefined index: description in /home/eqe67rthxkhc/public_html/admin/page_setting/api/updatepage.php on line 7

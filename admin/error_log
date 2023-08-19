@@ -1,0 +1,10 @@
+[08-Apr-2023 07:55:07 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'hplus'@'localhost' (using password: YES) in /home/eqe67rthxkhc/public_html/admin/config.php on line 5
+[08-Apr-2023 07:55:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/eqe67rthxkhc/public_html/admin/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/eqe67rthxkhc/public_html/admin/config.php on line 6
+[08-Apr-2023 07:55:26 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'hplus'@'localhost' (using password: YES) in /home/eqe67rthxkhc/public_html/admin/config.php on line 5
+[08-Apr-2023 07:55:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/eqe67rthxkhc/public_html/admin/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/eqe67rthxkhc/public_html/admin/config.php on line 6

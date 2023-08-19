@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <meta charset="utf-8">  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+		<title>Agent</title>  
+		<!-- CSS -->	
+		<link rel="stylesheet" href="../css/bootstrap.min.css">   
+		<link rel="stylesheet" href="../css/style.css">
+    </head>
+	<body>  
+		<div class="wrapper">       
+		<!-- ================Sidebar================  -->      
+		<nav id="sidebar">      
+		 <div class="sidebar-header">      
+			<h3>LogoX.</h3>              
+			<strong>LX</strong>       
+		 </div>          
+		 <ul class="list-unstyled components">     
+		  <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i><span>Home</span></a></li>    
+		  <li><a href="#"><i class="fas fa-car"></i><span>Device</span></a></li>		
+		  <li><a href="#"><i class="fas fa-tv"></i><span>Monitor</span></a></li>     
+		  <li><a href="#"><i class="fas fa-tv"></i><span>Video</span></a></li>      
+		  <li><a href="#"><i class="fas fa-check-circle"></i><span>Detect</span></a></li>	
+		  <li><a href="#"><i class="fas fa-camera"></i><span>Equipment</span></a></li>     
+		  <li>
+		    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+		    <i class="fas fa-user-friends"></i><span>Account</span></a>                 
+					<ul class="collapse list-unstyled" id="pageSubmenu">                        
+		              <li><a href="agent.html">Agent</a></li> 
+		              <li><a href="adminmange.html">Admin</a></li>		
+					        <li><a href="enduser.html">End User</a></li>
+		      </ul> 
+		  </li>   
+		 </ul>         
+		</nav>     
+		<!-- =======================Page Content=====================  -->  
+		<div id="content">         
+			<nav class="navbar navbar-expand-lg navbar-light">      
+				<div class="container-fluid">               
+					<button type="button" id="sidebarCollapse" class="btn">     
+						<i class="fas fa-bars"></i>                      
+						<!-- <span>Toggle Sidebar</span> -->             
+					</button>               
+					<div class="admin-panel">       
+						<ul class="ml-auto">          
+							<li>						
+								<a href="#profilemenu" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+								<img src="images/Pixabay.png" /></a>						
+								<ul class="collapse list-unstyled drop-list" id="profilemenu">								
+									<li><a href="#">Agent</a></li> 
+									<li><a href="#" >Admin</a></li>		
+									<li><a href="#">End User</a></li>	
+								</ul>						
+							</li> 						
+							<li>Admin</li>						
+							<li>				
+								<a href="#adminbmenu" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+								<img src="images/eng.png" /></a>		
+								<ul class="collapse list-unstyled drop-list" id="adminbmenu">	
+									<li><a href="#">Agent</a></li>	
+									<li><a href="#">Admin</a></li>	
+									<li><a href="#">End User</a></li>	
+								</ul>								
+							</li>							                
+						</ul>            
+					</div>            
+				</div>     
+			</nav>		
+						<div class="main-content">			
+						<h1>Agent Manage</h1>				
+						<div class="search-form mt-3 mb-4">		
+						<form class="form-inline1" action="">		
+						<div class="row">			
+						<div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">	
+						<div class="custom-select form-group">				
+						<select>					
+						<option value="0">Expiration</option>						
+						<option value="1">Demo</option>		
+						<option value="2">Demo</option>						
+						<option value="3">Demo</option>		
+						<option value="4">Demo</option>		
+						</select>					
+						</div>			
+						</div>					
+						<div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">				
+						<div class="custom-select form-group">					 
+						<select>						
+						<option value="0">Expiration</option>					
+						<option value="1">Demo</option>			
+						<option value="2">Demo</option>					
+						<option value="3">Demo</option>					
+						<option value="4">Demo</option>					 
+						</select>		
+						</div>									</div>				
+						<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">				
+						<div class="form-group has-search">										
+						<button type="button" class="btn btn-style-1" ><span class="fa fa-search form-control-feedback"></span> Search</button>				
+						</div>				
+						</div>				
+						<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">			
+						<div class="form-group has-search">									
+						<button type="button" class="btn btn-style-2" >Export</button>				
+						</div>				
+						</div>									
+						</div>									
+						</form>		
+						<button type="button" class="btn add-search" data-toggle="modal" data-target="#exampleModalagent">
+						<i class="fas fa-plus"></i> &nbsp; Create Agent</button>			
+						</div>										<form action="/action_page.php" class="cust-searchbar">							<div class="input-group">								<input type="text" class="form-control" placeholder="Search" name="search">								<!-- <div class="input-group-btn">									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button> 								</div> -->							</div>						</form>			
+						<div class="users-table mt-4 mb-4">				 
+						<div class="table-responsive">				
+						<table class="table table-striped table-class" id= "table-id">				
+						<thead>										<tr>					
+							
+						<th class="align-middle" scope="col">Agent ID</th>	
+						<th class="align-middle" scope="col">Agent Name</th>	
+						<th class="align-middle" scope="col">Contact</th>	
+						<th class="align-middle" scope="col">Contact Number</th>			
+						<th class="align-middle" scope="col">Expire Date</th>		
+						<th class="align-middle" scope="col">Users</th>								
+						<th class="align-middle" scope="col" style="text-align:center;">Action</th>		
+						</tr>				
+						</thead>					
+						<tbody>	
+						<tr>					
+							
+						<td class="align-middle"><strong>KB7MK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>	
+						<tr>					
+						
+						<td class="align-middle"><strong>KB7MK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>	
+						<tr>					
+								
+						<td class="align-middle"><strong>KB7MK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>	
+						<tr>					
+							
+						<td class="align-middle"><strong>KB7MK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>	
+						<tr>					
+								
+						<td class="align-middle"><strong>KB7MK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>
+
+                        <tr>					
+							
+						<td class="align-middle"><strong>KB7MK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>
+						
+						<tr>					
+						
+						<td class="align-middle"><strong>KB7MK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>
+						
+						<tr>					
+						
+						<td class="align-middle"><strong>KB7MghgK00</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>
+						
+						<tr>					
+							
+						<td class="align-middle"><strong>KB7MK0jkuj0</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>
+						
+						<tr>					
+						
+						<td class="align-middle"><strong>KB7MK0iu0</strong></td>	
+						<td class="align-middle"><strong>User Leo</strong></td>	
+						<td class="align-middle">YTC</td>				
+						<td class="align-middle"><strong>17583348723</strong></td>		
+						<td class="align-middle">2021-06-11</td>			
+						<td class="align-middle"><strong>4<strong></td>							
+						<td class="align-middle align-right"><label class="switch">		
+						<input type="checkbox" checked><span class="slider round"></span></label> &nbsp;		
+						<img src="images/times-circle-solid.png" data-toggle="modal" data-target="#exampleModaldelete">				
+						<img src="images/Group 28.png">						
+						<img src="images/Group 31.png"> &nbsp;				
+						<!-- <img src="images/ellipsis-v-solid.png"> -->					
+						</td>			
+						</tr>
+						
+						</tbody>				 
+						</table>	
+						</div>				<br>							
+						<div class="pagination users-table-pagination mt-1">				 
+                    <div class="page-number">					
+                       <p>Items per page</p>					                              
+                      <div class="form-group page-drop-size"> 	
+											 		<select class  ="form-control" name="state" id="maxRows">
+														 <option value="5000">Show ALL Rows</option>
+														 <option value="5">5</option>
+														 <option value="10">10</option>
+														 <option value="15">15</option>
+														 <option value="20">20</option>
+														 <option value="50">50</option>
+														 <option value="70">70</option>
+														 <option value="100">100</option>
+														</select>												 		
+									  	</div>
+                   </div>					
+	                 <div class="number-of-page"><p>1 - 5  of  12 </p></div>					
+	                  <div class='pagination-container number-pn' >
+				       <nav>
+				         <ul class="pagination">            
+                    <li data-page="prev" >
+								      <span> <img src="images/prev.png"> <span class="sr-only">(current)</span></span>
+								    </li>				  
+                    <li data-page="next" id="prev">
+								       <span> <img src="images/next.png"> <span class="sr-only">(current)</span></span>
+								    </li>
+				        </ul>
+				      </nav>
+			      </div>
+
+
+            </div>						
+						</div>			
+						</div> 
+						<!-- main content end -->      
+						</div> 
+
+
+
+
+						 
+			</div>
+
+<!--===================================Agent Popup=========================== -->
+
+<div class="modal fade" id="exampleModalagent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">	
+  <div class="modal-dialog tabs-cust-w" role="document"> 
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Create Agent</h4>
+        <span><img src="images/close.png" data-dismiss="modal"></span>
+      </div>	  
+      <div class="modal-body-form pt-0">
+	   <div class="tab">  
+        <button class="tablinks active" onclick="openCity(event, 'basicinformation')">Basic Information</button>
+        <button class="tablinks" onclick="openCity(event, 'paymentinformation')">Payment Information</button>
+        <button class="tablinks" onclick="openCity(event, 'accountinformation')">Account Information</button>
+       </div>
+       <div id="basicinformation" class="tabcontent active" style="display:block;">
+        <form>
+		    <div class="row  img-cust">
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="agentid" class="col-form-label">Agent ID</label>
+                      <input type="text" class="form-control bg-cust" id="agentid" placeholder="2021-07-14-211625">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Agent Name</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option></option>
+                          <option>PURUSHOTAM</option>
+                          <option>ROHIT</option>
+                          <option>MB Rajawat</option>
+                          <option>MOHAN</option>
+                        </select>
+                    </div>
+		            <div class="form-group">
+                      <label for="licensenumber" class="col-form-label"> Business License Number</label>
+                      <input type="number" class="form-control" id="licensenumber" placeholder="">
+                    </div>
+		            <div class="form-group">
+                      <label for="datePeriod" class="col-form-label">Valid Period of business License</label>
+                      <input type="date" class="form-control" id="datePeriod" placeholder="">
+                    </div>
+		            <div class="form-group">
+                      <label for="purchasedate" class="col-form-label"> Name of Legal Person</label>
+                      <input type="date" class="form-control" id="purchasedate" placeholder="">
+                    </div>
+		            <div class="form-group">
+                      <label for="issuedate" class="col-form-label"> ID Number of legal person</label>
+                      <input type="date" class="form-control" id="issuedate" placeholder="">
+                    </div>		  
+                </div>
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+		            <div class="form-group">
+                    <label for="image" class="col-form-label"> Business License Upload</label>
+					<img id="blah" src="#" alt="your image" />
+                    <input type="file" id="upload" class="custom-file-input" onchange="readURL(this);">
+                  </div>
+                </div>			
+            </div>
+		    <hr>
+		    <div class="row">
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+		            <div class="form-group">
+                      <label for="contacts" class="col-form-label">Contacts</label>
+                      <input type="number" class="form-control" id="contacts" placeholder="">
+                    </div>
+		            <div class="form-group">
+                      <label for="mailaddress" class="col-form-label">Mail Address</label>
+                      <input type="email" class="form-control" id="mailaddress" placeholder="">
+                    </div>		
+		        </div>
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+		            <div class="row">
+		                <div class="col-lg-6 col-md-6 col-sm-12">
+			                <div class="form-group">
+                                <label for="exampleFormControlSelect1">Agency City</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>option1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>			    			 
+		                </div>
+			            <div class="col-lg-6 col-md-6 col-sm-12">
+			                <div class="form-group">
+                                <label for="exampleFormControlSelect1">Agency City</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>option2</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+		                </div>
+		            </div>
+		            <div class="form-group">
+                        <label for="contacts" class="col-form-label">Contact Number</label>
+                        <input type="number" class="form-control" id="contacts" placeholder="">
+                    </div>
+		        </div>
+		    </div>
+        </form>
+        </div>	
+<!-- ===============================tabs2============================================ -->
+        <div id="paymentinformation" class="tabcontent">
+
+        <form>
+		    <div class="row  img-cust">
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="name" class="col-form-label">Bank Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="">
+                    </div>
+                    
+		            <div class="form-group">
+                      <label for="name" class="col-form-label">Bank Account Name</label>
+                      <input type="number" class="form-control" id="name" placeholder="">
+                    </div>
+		            		            	  
+                </div>
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+		           <div class="form-group">
+                      <label for="number" class="col-form-label">Bank Account</label>
+                      <input type="number" class="form-control" id="number" placeholder="">
+                    </div>
+                </div>			
+            </div>
+		    <hr>
+		    <div class="row">
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+		            <div class="form-group">
+                      <label for="contacts" class="col-form-label">Alipay Name</label>
+                      <input type="number" class="form-control" id="contacts" placeholder="">
+                    </div>
+		            <div class="form-group">
+                      <label for="mailaddress" class="col-form-label">Wechat Name</label>
+                      <input type="email" class="form-control" id="mailaddress" placeholder="">
+                    </div>		
+		        </div>
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+		           
+		            <div class="form-group">
+                        <label for="account" class="col-form-label">Alipay Account</label>
+                        <input type="text" class="form-control" id="account" placeholder="">
+                    </div>
+					<div class="form-group">
+                        <label for="account" class="col-form-label">Wechat Account</label>
+                        <input type="text" class="form-control" id="account" placeholder="">
+                    </div>
+		        </div>
+		    </div>
+        </form>
+        </div>	
+<!-- ===============================tabs3============================================ -->
+        <div id="accountinformation" class="tabcontent">
+
+        <form>
+		    <div class="row  img-cust">
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="loginaccount" class="col-form-label">Login Account</label>
+                      <input type="text" class="form-control" id="loginaccount" placeholder="">
+                    </div>
+					
+					<div class="form-group">
+                      <label for="nickname" class="col-form-label">Nick Name</label>
+                      <input type="text" class="form-control" id="nickname" placeholder="">
+                    </div>
+                    
+		            <div class="form-group">
+                      <label for="psw" class="col-form-label"> Password</label>
+                      <input type="password" class="form-control" id="psw" placeholder="">
+                    </div>
+					
+					<div class="row">
+		                <div class="col-lg-6 col-md-6 col-sm-12">
+			                <div class="form-group">
+                      <label for="purchasedate" class="col-form-label">Term of Validity</label>
+                      <input type="date" class="form-control" id="purchasedate" placeholder="">
+                    </div>		    			 
+		                </div>
+			            <div class="col-lg-6 col-md-6 col-sm-12">
+			                <div class="form-group">
+                      <label for="issuedate" class="col-form-label">Term of Validity</label>
+                      <input type="date" class="form-control" id="issuedate" placeholder="">
+                    </div>
+		                </div>
+		            </div>
+		            		  
+                </div>
+		        <div class="col-lg-6 col-md-6 col-sm-12">
+		            <div class="form-group">
+                    <label for="image" class="col-form-label">Agent Photo</label>
+					<img id="blah" src="#" alt="your image" />
+                    <input type="file" id="upload" class="custom-file-input" onchange="readURL(this);">
+                  </div>
+                </div>			
+            </div>
+		   
+        </form>
+        </div>	
+     </div>	 
+      <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn close-button-cust" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn submit-button-cust">Create User</button>
+        </div>
+    </div>
+  </div>
+</div>
+	<!--===================================Agent Popup End=========================== -->
+	<!--===================================delete Popup=========================== -->	<!-- Modal --><div class="modal fade" id="exampleModaldelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">  <div class="modal-dialog" role="document">    <div class="modal-content">      <div class="modal-header">         <h4 class="modal-title">Delete Popup</h4>        <button type="button" class="close" data-dismiss="modal" aria-label="Close">          <span aria-hidden="true"><img src="images/close.png" data-dismiss="modal"></span>        </button>      </div>      <div class="modal-body">        ...      </div>      <div class="modal-footer">        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>        <button type="button" class="btn btn-danger">Delete</button>      </div>    </div>  </div></div>		<!--===================================delete Popup End=========================== -->
+	<!-- js library -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>	
+	<script type="text/javascript" src="../js/popper.min.js"></script>	
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="../js/main.js"></script>	
+	<!-- Font Awesome JS -->  
+	<script defer src="../js/fontawesom-solid.js"></script>  
+	<script defer src="../js/fontawesome.js"></script>
+	
+	</body>
+</html>
